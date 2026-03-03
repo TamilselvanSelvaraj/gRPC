@@ -8,7 +8,7 @@ public class MyClient {
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 9090)
                 .usePlaintext()
                 .build();
-
+        // This stub acts as a local proxy for the remote service
         GreeterGrpc.GreeterBlockingStub stub = GreeterGrpc.newBlockingStub(channel);
 
         HelloReply response = stub.sayHello(HelloRequest.newBuilder().setName("Team").build());
