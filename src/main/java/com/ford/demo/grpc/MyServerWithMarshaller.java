@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 
 public class MyServerWithMarshaller {
 
+
     private static final Logger logger = Logger.getLogger(MyServerWithMarshaller.class.getName());
 
     public static void main(String[] args) throws Exception {
