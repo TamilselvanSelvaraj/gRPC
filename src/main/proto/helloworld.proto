@@ -15,26 +15,14 @@ message HelloReply {
   string message = 1;
 }
 
-service TestGreeter {
-  rpc SayHello1 (HelloRequest1) returns (HelloReply1) {}
-}
-
-message HelloRequest1 {
-  string name = 1;
-}
-
-message HelloReply1 {
-  string message = 1;
-}
-
 service FordGrpcDemo {
-  rpc SayFord (requestFord) returns (responseFord) {}
+  rpc SayFord (RequestFord) returns (ResponseFord) {}
 }
 
-message requestFord {
+message RequestFord {
   string name = 1;
 }
 
-message responseFord {
+message ResponseFord {
   string message = 1;
 }
